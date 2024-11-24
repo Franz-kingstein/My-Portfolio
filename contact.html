@@ -10,167 +10,158 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-
-      .custom-underline {
-        border-bottom: 2px solid #b85311;
-        padding-bottom: 5px;
-        display: inline-block;
-      }
-
-      /* Navbar Styles */
-      .navbar-toggler {
-        border: 0 !important;
-      }
-
-      .navbar-toggler:focus,
-      .navbar-toggler:active,
-      .navbar-toggler-icon:focus {
-        outline: none !important;
-        box-shadow: none !important;
-        border: 0 !important;
-      }
-
-      .toggler-icon {
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        display: block;
-        transition: all 0.2s;
-      }
-
-      .middle-bar {
-        margin: 5px auto;
-      }
-
-      .navbar-toggler .top-bar {
-        transform: rotate(45deg);
-        transform-origin: 10% 10%;
-      }
-
-      .navbar-toggler .middle-bar {
-        opacity: 0;
-        filter: alpha(opacity=0);
-      }
-
-      .navbar-toggler .bottom-bar {
-        transform: rotate(-45deg);
-        transform-origin: 10% 90%;
-      }
-
-      .navbar-toggler.collapsed .top-bar {
-        transform: rotate(0);
-      }
-
-      .navbar-toggler.collapsed .middle-bar {
-        opacity: 1;
-        filter: alpha(opacity=100);
-      }
-
-      .navbar-toggler.collapsed .bottom-bar {
-        transform: rotate(0);
-      }
-
-      .navbar-toggler.collapsed .toggler-icon {
-        background-color: #ffffff;
-      }
-
-      /* Form Styles */
-      .form-control:focus {
-        border-color: #b85311;
-        box-shadow: 0 0 0 0.25rem rgba(184, 83, 17, 0.25);
-      }
-
-      .btn:disabled {
-        opacity: 0.65;
-        cursor: not-allowed;
-      }
-
-      .alert {
-        margin-top: 1rem;
-        margin-bottom: 0;
-      }
-    </style>
   </head>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: solid rgba(0, 0, 0, 0.15);
+      border-width: 1px 0;
+      box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+        inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    .custom-underline {
+      border-bottom: 2px solid #b85311;
+      padding-bottom: 5px; /* Adjust as needed */
+      display: inline-block; /* Ensures the border only covers the text width */
+    }
+    /* Remove border from toggler */
+    .navbar-toggler {
+      border: 0 !important;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+      outline: none !important;
+      box-shadow: none !important;
+      border: 0 !important;
+    }
+
+    /* Lines of the Toggler */
+    .toggler-icon {
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      display: block;
+      transition: all 0.2s;
+    }
+
+    /* Adds Space between the lines */
+    .middle-bar {
+      margin: 5px auto;
+    }
+
+    /* State when navbar is opened (START) */
+    .navbar-toggler .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+
+    .navbar-toggler .middle-bar {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+
+    .navbar-toggler .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+    /* State when navbar is opened (END) */
+
+    /* State when navbar is collapsed (START) */
+    .navbar-toggler.collapsed .top-bar {
+      transform: rotate(0);
+    }
+
+    .navbar-toggler.collapsed .middle-bar {
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+      transform: rotate(0);
+    }
+    /* State when navbar is collapsed (END) */
+
+    /* Color of Toggler when collapsed */
+    .navbar-toggler.collapsed .toggler-icon {
+      background-color: #ffffff;
+    }
+  </style>
   <body class="bg-black">
-    <!-- Navbar -->
+    <!-- navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -189,7 +180,10 @@
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Home</a>
@@ -208,8 +202,8 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="px-1 text-centre">
+      <!-- Contact 1 - Bootstrap Brain Component -->
       <section class="">
         <div class="container">
           <div class="row justify-content-md-center">
@@ -217,6 +211,7 @@
               <h2 class="text-center text-white pt-5 display-3">
                 <b><span class="custom-underline">Contact Me!</span></b>
               </h2>
+
               <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
             </div>
           </div>
@@ -230,11 +225,19 @@
                 style="background-color: rgb(68, 68, 68)"
               >
                 <div id="alertPlaceholder"></div>
+                <!-- Alert Placeholder -->
 
-                <form id="contactForm" novalidate>
+                <form id="contactForm" method="post">
+                  <input
+                    type="hidden"
+                    name="api_key"
+                    value="e86f28af4740f30c558815bd93d71964"
+                  />
+                  <input type="hidden" name="template" value="5" />
+
                   <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                     <div class="col-12">
-                      <label for="fullname" class="form-label text-white">
+                      <label for="name" class="form-label text-white">
                         Full Name <span class="text-danger">*</span>
                       </label>
                       <input
@@ -244,19 +247,16 @@
                         name="name"
                         required
                       />
-                      <div class="invalid-feedback">
-                        Please provide your full name.
-                      </div>
                     </div>
                     <div class="col-12">
                       <label for="email" class="form-label text-white">
                         Email <span class="text-danger">*</span>
                       </label>
-                      <div class="input-group has-validation">
+                      <div class="input-group">
                         <span class="input-group-text">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
+                            width="26"
                             height="16"
                             fill="currentColor"
                             class="bi bi-envelope"
@@ -274,9 +274,6 @@
                           name="email"
                           required
                         />
-                        <div class="invalid-feedback">
-                          Please provide a valid email address.
-                        </div>
                       </div>
                     </div>
                     <div class="col-12">
@@ -290,19 +287,16 @@
                         rows="3"
                         required
                       ></textarea>
-                      <div class="invalid-feedback">
-                        Please provide your message.
-                      </div>
                     </div>
                     <div class="col-12">
                       <div class="d-grid">
                         <button
                           class="btn btn-lg"
-                          type="submit"
+                          type="button"
+                          onclick="submitForm()"
                           style="background-color: #b85311; color: white"
                         >
-                          <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-                          <span class="button-text">Submit</span>
+                          Submit
                         </button>
                       </div>
                     </div>
@@ -314,7 +308,7 @@
         </div>
       </section>
 
-      <!-- Footer -->
+      <!-- footer -->
       <footer class="footer pt-5 text-white text-center">
         <div class="container">
           <div class="row">
@@ -336,170 +330,59 @@
     </main>
 
     <script>
-      // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Form submission handler
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+      function submitForm() {
+        const form = document.getElementById("contactForm");
 
-        // Form validation check
-        if (!this.checkValidity()) {
-            e.stopPropagation();
-            this.classList.add('was-validated');
-            return;
-        }
-
-        submitForm();
-    });
-
-    // Function to handle form submission
-    function submitForm() {
-        const form = document.getElementById('contactForm');
-        const submitButton = form.querySelector('button[type="submit"]');
-        const spinner = submitButton.querySelector('.spinner-border');
-        const buttonText = submitButton.querySelector('.button-text');
-        
-        // Update UI to show loading state
-        setLoadingState(true, submitButton, spinner, buttonText);
-        
-        // Collect and prepare form data
+        // Collect form data and convert to JSON
         const formData = new FormData(form);
-        const jsonObject = {
-            api_key: 'e86f28af4740f30c558815bd93d71964',
-            template: '5'
-        };
-        
-        // Convert FormData to JSON object
+        const jsonObject = {};
         formData.forEach((value, key) => {
-            jsonObject[key] = value;
+          jsonObject[key] = value;
         });
+        console.log("form data", formData);
+        // Send the POST request using XMLHttpRequest
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://api.hlomail.in/v1/contact-mail", true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
-        // Send API request
-        fetch('https://api.hlomail.in/v1/contact-mail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(jsonObject)
-        })
-        .then(handleResponse)
-        .then(data => {
-            handleSuccess(form);
-        })
-        .catch(error => {
-            handleError(error);
-        })
-        .finally(() => {
-            // Reset UI state
-            setLoadingState(false, submitButton, spinner, buttonText);
-        });
-    }
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log("Success:", xhr.responseText);
+              showAlert("Form submitted successfully!", "success");
+            } else {
+              console.error("Error:", xhr.responseText);
+              showAlert("There was an error submitting the form.", "danger");
+            }
+          }
+        };
 
-    // Helper function to handle fetch response
-    function handleResponse(response) {
-        if (!response.ok) {
-            return response.json().then(err => Promise.reject(err));
-        }
-        return response.json();
-    }
+        xhr.send(JSON.stringify(jsonObject));
+      }
 
-    // Helper function to handle successful submission
-    function handleSuccess(form) {
-        showAlert('Message sent successfully! We\'ll get back to you soon.', 'success');
-        form.reset();
-        form.classList.remove('was-validated');
-    }
+      function showAlert(message, type) {
+        const alertPlaceholder = document.getElementById("alertPlaceholder");
+        const wrapper = document.createElement("div");
 
-    // Helper function to handle errors
-    function handleError(error) {
-        console.error('Error:', error);
-        let errorMessage = 'There was an error sending your message. Please try again later.';
-        
-        if (error.detail && Array.isArray(error.detail)) {
-            errorMessage = error.detail.map(err => err.msg).join('. ');
-        }
-        
-        showAlert(errorMessage, 'danger');
-    }
-
-    // Helper function to set loading state
-    function setLoadingState(isLoading, button, spinner, buttonText) {
-        button.disabled = isLoading;
-        if (isLoading) {
-            spinner.classList.remove('d-none');
-            buttonText.textContent = 'Sending...';
-        } else {
-            spinner.classList.add('d-none');
-            buttonText.textContent = 'Submit';
-        }
-    }
-
-    // Function to show alerts
-    function showAlert(message, type) {
-        const alertPlaceholder = document.getElementById('alertPlaceholder');
-        const wrapper = document.createElement('div');
-        
         wrapper.innerHTML = `
-            <div class="alert alert-${type} alert-dismissible fade show" role="alert">
-                ${message}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
+          <div class="alert alert-${type} alert-dismissible" role="alert">
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
         `;
 
-        // Clear existing alerts
-        alertPlaceholder.innerHTML = '';
-        alertPlaceholder.appendChild(wrapper);
+        alertPlaceholder.append(wrapper);
 
-        // Auto-dismiss alert after 5 seconds
+        // Remove the alert after a few seconds (optional)
         setTimeout(() => {
-            const alert = wrapper.querySelector('.alert');
-            if (alert) {
-                const bsAlert = new bootstrap.Alert(alert);
-                bsAlert.close();
-            }
+          wrapper.remove();
         }, 5000);
-    }
-
-    // Form input validation handlers
-    const inputs = document.querySelectorAll('form input, form textarea');
-    inputs.forEach(input => {
-        input.addEventListener('blur', function() {
-            if (this.value.trim() !== '') {
-                this.classList.add('was-validated');
-            }
-        });
-
-        input.addEventListener('input', function() {
-            if (this.value.trim() === '') {
-                this.classList.remove('was-validated');
-            }
-        });
-    });
-
-    // Email validation
-    const emailInput = document.getElementById('email');
-    emailInput.addEventListener('input', function() {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (this.value && !emailRegex.test(this.value)) {
-            this.setCustomValidity('Please enter a valid email address');
-        } else {
-            this.setCustomValidity('');
-        }
-    });
-});
-
-// Optional: Navbar collapse handler for mobile
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    const navbarToggler = document.querySelector('.navbar-toggler');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navbarCollapse.classList.contains('show')) {
-                navbarToggler.click();
-            }
-        });
-    });
-});
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
