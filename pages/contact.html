@@ -226,8 +226,7 @@
               >
                 <div id="alertPlaceholder"></div>
                 <!-- Alert Placeholder -->
-
-                <form id="contactForm" method="post">
+                <form action="https://api.hlomail.in/v1/contact-mail" id="contactForm" method="post">
                   <input
                     type="hidden"
                     name="api_key"
@@ -329,56 +328,6 @@
       </footer>
     </main>
 
-    <script>
-      function submitForm() {
-        const form = document.getElementById("contactForm");
-
-        // Collect form data and convert to JSON
-        const formData = new FormData(form);
-        const jsonObject = {};
-        formData.forEach((value, key) => {
-          jsonObject[key] = value;
-        });
-        console.log("form data", formData);
-        // Send the POST request using XMLHttpRequest
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://api.hlomail.in/v1/contact-mail", true);
-        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              console.log("Success:", xhr.responseText);
-              showAlert("Form submitted successfully!", "success");
-            } else {
-              console.error("Error:", xhr.responseText);
-              showAlert("There was an error submitting the form.", "danger");
-            }
-          }
-        };
-
-        xhr.send(JSON.stringify(jsonObject));
-      }
-
-      function showAlert(message, type) {
-        const alertPlaceholder = document.getElementById("alertPlaceholder");
-        const wrapper = document.createElement("div");
-
-        wrapper.innerHTML = `
-          <div class="alert alert-${type} alert-dismissible" role="alert">
-            ${message}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        `;
-
-        alertPlaceholder.append(wrapper);
-
-        // Remove the alert after a few seconds (optional)
-        setTimeout(() => {
-          wrapper.remove();
-        }, 5000);
-      }
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
